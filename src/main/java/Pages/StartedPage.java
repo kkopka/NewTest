@@ -1,5 +1,6 @@
 package Pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,7 @@ public class StartedPage {
 
     public void openOzon(){
         driver.get("https://www.ozon.ru/");
+        Assert.assertTrue(driver.getTitle().equals("OZON — интернет-магазин. Миллионы товаров по выгодным ценам"));
     }
 
     public void clickElectronic(){
