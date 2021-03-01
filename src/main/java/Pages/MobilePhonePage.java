@@ -49,6 +49,7 @@ public class MobilePhonePage {
                 e.printStackTrace();
             }
         }
+
     }
 
     public void AddRandomPhoneAtBasket() {

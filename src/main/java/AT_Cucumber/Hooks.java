@@ -21,7 +21,6 @@ public class Hooks {
 
     @After
     public void close() {
-        System.out.println("Тест окончен");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
