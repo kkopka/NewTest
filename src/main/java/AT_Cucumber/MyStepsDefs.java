@@ -28,7 +28,7 @@ public class MyStepsDefs {
     StartedPage startedPage;
 
     @Допустим("^пользователь зашел на сайт Ozon$")
-    public void пользовательЗашелНаСайтOzon() {
+    public void пользовательЗашелНаСайтOzon() throws InterruptedException {
         startedPage = new StartedPage(driver);
         startedPage.openOzon();
     }
