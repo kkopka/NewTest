@@ -24,10 +24,7 @@ public class StartedPage {
     }
 
     public void openOzon(){
-        driver.get("https://www.google.ru/");
-        searchField.sendKeys("ozon");
-        searchField.sendKeys(Keys.ENTER);
-        ozon.click();
+        driver.get("https://www.ozon.ru/");
         Assert.assertTrue(driver.getTitle().equals("OZON — интернет-магазин. Миллионы товаров по выгодным ценам"));
     }
 
