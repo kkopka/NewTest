@@ -27,5 +27,6 @@ public class Hooks {
             e.printStackTrace();
         }
         MyStepsDefs.driver.close();
+
     }
 }
