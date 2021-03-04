@@ -42,7 +42,6 @@ public class MyStepsDefs {
     public void онЗашелВПодкатегориюСмартфоны() {
         ElectronicPage electronicPage = new ElectronicPage(driver);
         electronicPage.clickMobilePhoneIcon();
-        System.out.println("Зашел в категорию телефоны");
     }
 
     @И("^установил цену от \"([^\"]*)\" р$")
