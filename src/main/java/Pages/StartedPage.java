@@ -18,16 +18,16 @@ public class StartedPage {
     private WebElement searchField;
     @FindBy( xpath = "//h3[@class='LC20lb DKV0Md']//span[text()='OZON — интернет-магазин. Миллионы товаров по ...']")
     private WebElement ozon;
+
     public StartedPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
     public void openOzon(){
-        driver.get("https://www.ozon.ru/");
+        driver.get("https://www.avito.ru/");
         Assert.assertTrue(driver.getTitle().equals("OZON — интернет-магазин. Миллионы товаров по выгодным ценам"));
     }
-
     public void clickElectronic(){
         electronicIcon.click();
     }

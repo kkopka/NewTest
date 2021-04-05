@@ -27,6 +27,7 @@ public class MyStepsDefs {
     MobilePhonePage mobilePhonePage;
     StartedPage startedPage;
 
+
     @Допустим("^пользователь зашел на сайт Ozon$")
     public void пользовательЗашелНаСайтOzon() throws InterruptedException {
         startedPage = new StartedPage(driver);
@@ -35,6 +36,7 @@ public class MyStepsDefs {
 
     @И("^зашел в категорию электроника$")
     public void зашелВКатегориюЭлектроника() {
+
         startedPage.clickElectronic();
     }
 
@@ -66,4 +68,6 @@ public class MyStepsDefs {
         BasketPage basketPage = new BasketPage(driver, wait);
         basketPage.clickButtonBasket();
     }
+
+
 }
